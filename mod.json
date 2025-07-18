@@ -6,9 +6,12 @@
     "android": "2.2074",
     "mac": "2.2074"
   },
-  "id": "itzkiba.elegant_rankings",
+  "id": "julfor.elegant_rankings",
   "name": "Profile Rankings",
-  "developer": "ItzKiba",
+  "developers": [
+    "ItzKiba",
+    "Julfor"
+  ],
   "description": "Adds various rankings to profile pages and makes rankings look nicer.",
   "dependencies": [
     {
@@ -22,6 +25,6 @@
       "ER_SpriteSheet": ["resources/*.png"]
     }
   },
-  "repository": "https://github.com/ItzKiba/ProfileRankings",
+  "repository": "https://github.com/thejulfor/ProfileRankings",
   "tags": ["online", "enhancement", "interface"]
 }
