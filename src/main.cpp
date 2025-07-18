@@ -80,19 +80,19 @@ class $modify(MenuLayer) {
         req1.param("type", "demons");
         req1.param("count", "2500");
         req1.bodyString(fmt::format("type={}&count={}", "demons", "2500"));
-        m_fields->m_listener1.setFilter(req1.get("https://clarifygdps.com/gdutils/moreleaderboards.php"));
+        m_fields->m_listener1.setFilter(req1.get("https://gdps.julfor.ru/serverfiles/incl/scores/elegantRankings.php"));
 
         auto req2 = web::WebRequest();
-        req2.param("type", "cp");
+        req2.param("type", "creators");
         req2.param("count", "2500");
-        req2.bodyString(fmt::format("type={}&count={}", "cp", "2500"));
-        m_fields->m_listener2.setFilter(req2.get("https://clarifygdps.com/gdutils/moreleaderboards.php"));
+        req2.bodyString(fmt::format("type={}&count={}", "creators", "2500"));
+        m_fields->m_listener2.setFilter(req2.get("https://gdps.julfor.ru/serverfiles/incl/scores/elegantRankings.php"));
 
         auto req3 = web::WebRequest();
         req3.param("type", "moons");
         req3.param("count", "2500");
         req3.bodyString(fmt::format("type={}&count={}", "moons", "2500"));
-        m_fields->m_listener3.setFilter(req3.get("https://clarifygdps.com/gdutils/moreleaderboards.php"));
+        m_fields->m_listener3.setFilter(req3.get("https://gdps.julfor.ru/serverfiles/incl/scores/elegantRankings.php"));
         
 		return true;
 	}
